@@ -1,5 +1,16 @@
-div{
-  position: absolute;
-  margin: auto;
+#app{
+ 
+  align-content: center;
+  position:relative;
+  align-items: center;
+  padding:10px;
+  background-color:#ecbaec;}
   
-}
+  h1 {
+    text-align: center;
+    color :#002fff;
+    background:#ef6add ;
+  }
+  li {
+    margin: 20;
+  }

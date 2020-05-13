@@ -28,11 +28,15 @@ var todos =JSON.parse(localStorage.getItem("list_todos"))||[];
   
   function addtodos(){
     
-    var inputText = inputElement.value+' ---- ';
+    var inputText = inputElement.value+'        ';
+    if (inputText === ''+'        '){
+      alert("O campo não pode ser vazio");
+    }else{
     todos.push(inputText);
     inputElement.value="";
     rendertodo();
     savetodoStorage();
+    }
   }
   
   btnElement.onclick=addtodos;
@@ -46,4 +50,3 @@ var todos =JSON.parse(localStorage.getItem("list_todos"))||[];
   function savetodoStorage(){
     localStorage.setItem('list_todos',JSON.stringify(todos));
   }
-  console.log(localStorage);
